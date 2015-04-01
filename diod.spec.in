@@ -5,7 +5,7 @@ Release: @META_RELEASE@%{?dist}
 Summary:  I/O forwarding server for 9P.
 License: GPL
 Group: Applications/System
-URL: http://code.google.com/p/diod
+URL: http://github.com/chaos/diod
 Source0: %{name}-%{version}.tar.gz
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -19,8 +19,7 @@ BuildRequires: libcap-devel
 BuildRequires: libattr-devel attr
 
 %description
-diod is a 9P server used in combination with the kernel v9fs file
-system for I/O forwarding on Linux clusters.
+diod is a user space 9P file server for Linux.
 
 %prep
 %setup -q
